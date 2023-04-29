@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.bg-image {
+  background-image: url("https://images.unsplash.com/photo-1599220144359-d4b723bd476d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* スマートフォン用のスタイル */
+@media screen and (max-width: 480px) {
+  .bg-image {
+    background-image: url("https://images.unsplash.com/photo-1599220144359-d4b723bd476d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+#todo-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#todo-input {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#todo-list {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.todo-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-item button:hover {
+  background-color: #c82333;
+}
+
+.todo-item .todo-text {
+  flex: 1;
+  margin-right: 10px;
+}
